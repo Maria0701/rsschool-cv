@@ -13,7 +13,7 @@ focus on frontend, I have been studying every aspect of frontend development and
 ## Work experience
 * 2016 - 2019 Web-developer and Search Engine Optimization in LLC "ROST"
 * 2019 - 2020 Freelance
-* 2020 - Current Time LLC Liberty (Webenergy-it) SEO and frontend developer
+* 2020 - 2022 LLC Liberty (Webenergy-it) SEO and frontend developer
 
 ## Skills
 * HTML

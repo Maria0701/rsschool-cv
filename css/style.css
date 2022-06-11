@@ -22,11 +22,24 @@ html {
     box-sizing: inherit;
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'Open Sans';
     src: url('OpenSans-Regular.woff') format('woff');
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-SemiBold.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -48,7 +61,7 @@ body {
     min-height: 100vh;
     color: var(--grey2);
     font-size: var(--font-size);
-    line-height: 1.2;
+    line-height: 1.4;
     font-family: 'Open Sans', 'Roboto', sans-serif;  
     font-weight: 400;
     font-style: normal;
@@ -123,9 +136,13 @@ img {
 
 .navigation__Link {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     color: var(--grey2);
     line-height: 2em;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -134,7 +151,7 @@ img {
     display: grid;
     padding-left: var(--left-padding);
     padding-right: var(--right-padding);
-    padding-top: 44px;
+    padding-top: 60px;
     padding-bottom: 44px;
     color: var(--white);
 
@@ -145,7 +162,7 @@ img {
     display: grid;
     padding-left: var(--right-padding);
     padding-right: var(--right-padding2);
-    padding-top: 44px;
+    padding-top: 60px;
     padding-bottom: 44px;
 
     background-color: var(--white);
@@ -288,4 +305,75 @@ img {
 .left__refrences-link:hover,
 .left__refrences-link:focus {
     color: var(--blue-light);
+}
+
+.right{
+    align-content: flex-start;
+}
+
+.right__h2 {
+    margin-top: 0;
+    margin-bottom: 1em;;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--blue-dark);
+}
+
+.right__education {
+    margin-bottom: 5em;
+}
+
+.right__years {
+    flex-basis: 200px;
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: var(--grey3);
+}
+
+.right__list {
+    display: grid;
+    grid-row-gap: 2em;
+}
+
+.right__list-item p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.right__place {
+    display: grid;
+    padding-left: 0.5em;
+}
+
+.right__list-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    grid-column-gap: 10px;
+}
+
+.right__list-top--dot:before {
+    content: '';
+    position: absolute;
+    top: 0.8em;
+    left: 0;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: var(--blue-light);
+    border-radius: 50%;
+}
+
+.right__type {
+    font-weight: 700;
+}
+
+.right__inst {
+    font-weight: 300;
+}
+
+.right__place {
+    display: grid;
+    font-size: 1.5em;
 }

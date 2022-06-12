@@ -152,7 +152,7 @@ img {
     padding-left: var(--left-padding);
     padding-right: var(--right-padding);
     padding-top: 60px;
-    padding-bottom: 44px;
+    padding-bottom: 100px;
     color: var(--white);
 
     background-color: var(--blue-dark);
@@ -163,7 +163,7 @@ img {
     padding-left: var(--right-padding);
     padding-right: var(--right-padding2);
     padding-top: 60px;
-    padding-bottom: 44px;
+    padding-bottom: 100px;
 
     background-color: var(--white);
 }
@@ -214,6 +214,7 @@ img {
     grid-column-gap: 0.5em;
     justify-content: flex-start;
     color: var(--blue-light);
+    text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
@@ -336,6 +337,11 @@ img {
     grid-row-gap: 2em;
 }
 
+.right__list-item {
+    display: grid;
+    grid-row-gap: 1.5em;
+}
+
 .right__list-item p {
     margin-top: 0;
     margin-bottom: 0;
@@ -343,7 +349,7 @@ img {
 
 .right__place {
     display: grid;
-    padding-left: 0.5em;
+    
 }
 
 .right__list-top {
@@ -351,6 +357,10 @@ img {
     display: flex;
     justify-content: space-between;
     grid-column-gap: 10px;
+}
+
+.right__list-top--dot {
+    padding-left: 1em;
 }
 
 .right__list-top--dot:before {
@@ -376,4 +386,54 @@ img {
 .right__place {
     display: grid;
     font-size: 1.5em;
+}
+
+.right__enumeration {
+    display: grid;
+    grid-row-gap: 1.5em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.right__enumeration li {
+    position: relative;
+    padding-left: 1em;
+    
+}
+
+.right__enumeration li:before {
+    content: '';
+    position: absolute;
+    top: 0.7em;
+    left: 0;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: var(--blue-light);
+    border-radius: 50%;
+}
+
+.right__code pre {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer__container {
+    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-left: var(--left-padding);
+    padding-right: var(--right-padding2);
+}
+
+.footer__logo {
+    text-decoration: none;
+    color: var(--white);
 }

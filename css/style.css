@@ -206,6 +206,9 @@ img {
 .left__info-links {
     display: grid;
     grid-row-gap: 0.5em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .left__link {
@@ -216,6 +219,10 @@ img {
     color: var(--blue-light);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
+}
+
+.left__link--projects {
+    color: var(--white);
 }
 
 .left__link span {
@@ -233,6 +240,10 @@ img {
 .left__link:hover,
 .left__link:focus {
     color: var(--white);
+}
+
+.left__link--projects:hover {
+    color: var(--blue-light);
 }
 
 .left__about {
@@ -427,13 +438,36 @@ img {
 }
 
 .footer__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     padding-bottom: 20px;
     padding-top: 12px;
+}
+
+.footer__left {
     padding-left: var(--left-padding);
+    padding-right: var(--left-padding);
+}
+
+.footer__right {
+    display: grid;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: var(--right-padding);
     padding-right: var(--right-padding2);
 }
 
 .footer__logo {
     text-decoration: none;
     color: var(--white);
+}
+
+.footer__date {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer__date a {
+    color: var(--grey3);
+    text-decoration: none;
 }
